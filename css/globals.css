@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+body{
+    background-color: var(--bg-color);
+    font-size: 1.6rem;
+    color: var(--color-light);
+    max-width: 1920px;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.color-title{
+    background: -webkit-linear-gradient(48deg, rgba(42,63,184,1) 13%, rgba(154,137,217,1) 49%, rgba(42,63,184,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.title-product{
+    font-weight: 400;
+    text-align: right;
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    padding: 3rem 0 3rem 6rem;
+    border-left: .2rem solid var(--color-secundary);
+}
+
+.title-product span{
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.description-product{
+    font-size: 1.8rem;
+    text-align: right;
+    padding: 0 3rem 0 3rem;
+}
+
+.content::before{
+    border: .15rem solid var(--color-secundary);
+    content: "";
+    width: 75%;
+    right: 16rem;
+    height: 60%;
+    top: 26rem;
+    display: block;
+    position: absolute;
+    border-radius: 2rem;
+    z-index: -2;
+}
+
+.content{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 4rem;
+    margin: 0 auto;
+    padding-inline: 6rem;
+    position: relative;
+}
+
+.img-logo{
+    width: 30rem;
+}
+
+.infos ul::before{
+    content: "";
+    border-radius: 2rem;
+    width: 200%;
+    left: -3rem;
+    height: 125%;
+    top: -5.5rem;
+    background-image: linear-gradient(to right, var(--color-secundary-trasparent-one), var(--color-secundary-trasparent-two));
+    /* padding: 20rem; */
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+.infos-title{
+    font-size: 2.4rem;
+    padding-block: 3rem 1rem;
+    font-weight: 600;
+}
+
+.infos ul{
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 2rem;
+    
+}
+
+.img-product{
+    width: 40rem;
+}
+
+.legal-txt, .product p{
+    color: var(--color-secundary);
+    font-size: 300;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.legal-txt{
+    margin-top: 3rem;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
