@@ -46,12 +46,25 @@ body{
 }
 
 .content::before{
-    border: .15rem solid var(--color-secundary);
+    border: .15rem solid var(--color-terciary);
     content: "";
     width: 75%;
     right: 16rem;
     height: 60%;
     top: 26rem;
+    display: block;
+    position: absolute;
+    border-radius: 2rem;
+    z-index: -2;
+}
+
+.content::after{
+    background-image: linear-gradient(to right, var(--bg-color), #00022f7e);
+    content: "";
+    width: 100%;
+    right: -5rem;
+    height: 65%;
+    top: 24rem;
     display: block;
     position: absolute;
     border-radius: 2rem;
